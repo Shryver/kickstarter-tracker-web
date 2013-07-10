@@ -25,6 +25,7 @@
 		exec('if [[ ! -d tmp ]]; then mkdir tmp; fi');
 		//copies rss file
 		exec('cp '.$conf['path'].$rss.' tmp/');
+		echo "<a href=\"".$rss."\">url</a>";
 	}
 
 	$user="shryver";
@@ -41,5 +42,5 @@
 //	delProject($conf, $dbFile, 'testUrl');
 //	createConfig($conf, 'newUserTest');
 	listProjects($dbFile);
-//	getInfos($conf, $rss, $userFile);
+	getInfos($conf, $rss, $userFile);
 ?>
